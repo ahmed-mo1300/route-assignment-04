@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
 /* Global Rules */
 * {
   margin: 0;
@@ -222,7 +223,6 @@ a {
 .about .container .image-container {
   border-radius: 5px;
   border: 5px solid #555;
-  /*TODO frame in responsive*/
 }
 
 @media (max-width: 1200px) {
@@ -252,6 +252,7 @@ a {
 .about .container .image-container .image .transparent {
   position: absolute;
   height: 0;
+  overflow: hidden;
   bottom: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
@@ -464,8 +465,6 @@ a {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 20px 0;
-  /*TODO gap with width */
-  /* gap: 20px; */
 }
 
 .our-portfolio .container .gallery .item {
@@ -524,7 +523,6 @@ a {
 .stats {
   padding: 80px 0;
   background-color: #f1f1f1;
-  /*TODO responsive gaps */
 }
 
 .stats .container {
@@ -756,8 +754,28 @@ a {
   gap: 20px;
 }
 
+.contact-us .container form .user-data {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .contact-us .container form .user-data {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.contact-us .container form .user-data > * {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .contact-us .container form .user-data > * {
+    width: 100%;
+  }
+}
+
 .contact-us .container form .input {
-  /* TODO two in first row */
   height: 34px;
   padding: 6px 12px;
   font-size: 18px;

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Fokir - Personal Portfolio</title>
   </head>
@@ -283,16 +284,18 @@
           <div class="line line3"></div>
         </div>
         <form method="post">
-          <input class="input" type="text" name="name" required placeholder="Name" autocomplete="off" />
-          <input
-            class="input"
-            type="email"
-            name="name"
-            required
-            placeholder="E-mail"
-            inputmode="email"
-            autocomplete="off"
-          />
+          <div class="user-data">
+            <input class="input" type="text" name="name" required placeholder="Name" autocomplete="off" />
+            <input
+              class="input"
+              type="email"
+              name="name"
+              required
+              placeholder="E-mail"
+              inputmode="email"
+              autocomplete="off"
+            />
+          </div>
           <input class="input w-100" type="text" name="subject" required placeholder="Subject" autocomplete="off" />
           <textarea class="input" name="message" required placeholder="message" autocomplete="off"></textarea>
           <button type="submit">send message</button>
